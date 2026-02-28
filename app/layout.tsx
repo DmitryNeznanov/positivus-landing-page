@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Positivus Landing Page",
-  description: "Positivus home page",
+  description: "Positivus page",
 }
 
 export default function RootLayout({

@@ -8,26 +8,52 @@
 
   /* Fonts */
   --font-space-grotesk: var(--font-space-grotesk);
+
+  /* Text Sizes */
+  --text-md: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+  --text-3xl: 26px;
+  --text-4xl: 30px;
+  --text-5xl: 36px;
+  --text-6xl: 40px;
+  --text-7xl: 43px;
+  --text-8xl: 60px;
+
+  /* Leading */
+  --leading-md: 28px;
+
+  /* Border Radius */
+  --radius-sm: 7px;
+  --radius-md: 14px;
+  --radius-lg: 45px;
 }
 
-body {
-  @apply bg-background text-foreground font-space-grotesk;
+@layer base {
+  body {
+    @apply text-base bg-background text-foreground font-space-grotesk;
+  }
 }
-
 @layer components {
-  .heading-1 {
-    @apply text-[43px]/[auto] font-medium text-foreground md:text-[60px]/[auto] md:font-medium;
+  .heading-1xl {
+    @apply text-xl font-medium xl:text-2xl;
   }
-  .heading-2 {
-    @apply text-[36px]/[auto] font-medium text-foreground md:text-[40px]/[auto] md:font-medium;
+  .heading-2xl {
+    @apply text-3xl font-medium xl:text-4xl;
   }
-  .heading-3 {
-    @apply text-[26px]/[auto] font-medium text-foreground md:text-[30px]/[auto] md:font-medium;
+  .heading-3xl {
+    @apply text-5xl font-medium xl:text-6xl;
   }
-  .heading-4 {
-    @apply text-[18px]/[auto] font-medium text-foreground md:text-[20px]/[auto] md:font-medium;
+  .heading-4xl {
+    @apply text-7xl font-medium xl:text-8xl;
   }
   .text-base {
-    @apply text-[16px]/[24px] font-normal text-foreground md:text-[18px]/[auto] md:font-normal;
+    @apply text-md md:text-xl;
+  }
+  .wrapper {
+    @apply px-[22px] md:px-[40px] lg:px-[60px] xl:px-[100px] 2xl:px-[125px];
+  }
+  .button-black {
+    @apply w-max block px-[33px] py-[20px] bg-foreground text-background text-2xl leading-md rounded-md;
   }
 }
