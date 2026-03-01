@@ -35,6 +35,7 @@
   }
 }
 @layer components {
+  /* Headings */
   .heading-1xl {
     @apply text-xl font-medium xl:text-2xl;
   }
@@ -47,13 +48,25 @@
   .heading-4xl {
     @apply text-7xl font-medium xl:text-8xl;
   }
+
+  /* Text sizes */
   .text-base {
     @apply text-md md:text-xl;
   }
-  .wrapper {
-    @apply px-[22px] md:px-[40px] lg:px-[60px] xl:px-[100px] 2xl:px-[125px];
-  }
+
+  /* Buttons */
   .button-black {
-    @apply w-max block px-[33px] py-[20px] bg-foreground text-background text-2xl leading-md rounded-md;
+    @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md;
+  }
+  .button-transparent {
+    @apply w-max block px-[35px] py-[20px] bg-transparent border border-foreground text-foreground text-xl xl:text-2xl leading-md rounded-md;
+  }
+
+  /* Utility */
+  .wrapper {
+    @apply max-w-[1240px] mx-auto;
+  }
+  .header-wrapper {
+    @apply pt-[35px] xl:pt-[60px] px-[10px];
   }
 }
