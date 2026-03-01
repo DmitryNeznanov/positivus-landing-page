@@ -15,7 +15,7 @@ export default function MobileMenu({
 
   return (
     <div
-      className={`bg-accent overflow-hidden fixed top-0 left-0 z-50 w-[0%] h-full transition-[width] duration-300 ${
+      className={`bg-accent lg:hidden overflow-hidden fixed top-0 left-0 z-50 w-[0%] h-full transition-[width] duration-300 ${
         isOpen ? "w-full" : "w-[0%] pointer-events-none"
       }`}>
       <div

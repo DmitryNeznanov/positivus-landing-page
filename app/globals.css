@@ -3,7 +3,8 @@
 @theme {
   /* Colors */
   --color-foreground: #191a23;
-  --color-background: #f3f3f3;
+  --color-background: #ffffff;
+  --color-grey: #f3f3f3;
   --color-accent: #b9ff66;
 
   /* Fonts */
@@ -27,6 +28,9 @@
   --radius-sm: 7px;
   --radius-md: 14px;
   --radius-lg: 45px;
+
+  /* Shadows */
+  --shadow-xl: 0px 5px 0px 0px #191a23;
 }
 
 @layer base {
@@ -55,7 +59,7 @@
   }
 
   /* Buttons */
-  .button-black {
+  .button-foreground {
     @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md;
   }
   .button-transparent {
@@ -68,5 +72,11 @@
   }
   .header-wrapper {
     @apply pt-[35px] xl:pt-[60px] px-[10px];
+  }
+  .span-accent {
+    @apply w-max h-max bg-accent rounded-sm px-[7px] inline-flex items-center;
+  }
+  .span-background {
+    @apply w-max h-max bg-background rounded-sm px-[7px] inline-flex items-center;
   }
 }

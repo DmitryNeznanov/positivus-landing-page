@@ -19,7 +19,7 @@ export default function Hero() {
               media marketing, and content creation.
             </p>
             <Link
-              className="button-black"
+              className="button-foreground"
               href="#contact">
               Book a consultation
             </Link>
