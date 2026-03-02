@@ -40,7 +40,7 @@
 }
 @layer components {
   /* Headings */
-  .heading-1xl {
+  .heading-xl {
     @apply text-xl font-medium xl:text-2xl;
   }
   .heading-2xl {

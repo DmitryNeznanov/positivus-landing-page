@@ -82,7 +82,7 @@ export default function Process() {
                       </button>
                     </div>
                     <div
-                      className={` grid transition-all duration-300  overflow-hidden ${
+                      className={`grid transition-all duration-300 overflow-hidden ${
                         index === i + 1
                           ? "mt-[15px] lg:mt-[30px] grid-rows-[1fr]"
                           : "grid-rows-[0fr]"
