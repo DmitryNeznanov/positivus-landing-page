@@ -74,7 +74,7 @@
     @apply pt-[35px] xl:pt-[60px] px-[10px];
   }
   .span-accent {
-    @apply w-max h-max bg-accent rounded-sm px-[7px] inline-flex items-center;
+    @apply w-max h-max bg-accent rounded-sm px-[7px] py-[4px] inline-flex items-center whitespace-nowrap;
   }
   .span-background {
     @apply w-max h-max bg-background rounded-sm px-[7px] inline-flex items-center;
