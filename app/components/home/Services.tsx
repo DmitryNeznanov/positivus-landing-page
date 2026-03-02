@@ -259,7 +259,7 @@ export default function Services() {
         </div>
       </section>
       {/* CTA */}
-      <section className="px-[10px]">
+      <section className="px-[10px] pb-[75px] 2xl:pb-[163px]">
         <div className="wrapper">
           <article className="w-full md:max-h-[347px] mx-auto p-[30px] md:p-[60px] flex flex-col items-center justify-center gap-y-[30px] md:gap-y-0 md:flex-row md:justify-between md:items-center bg-grey rounded-lg">
             <div className="max-w-[373px] lg:max-w-[473px] flex flex-col gap-[26px]">
@@ -276,7 +276,7 @@ export default function Services() {
             </div>
             <div>
               <Image
-                className="hidden md:block md:h-[120%]"
+                className="hidden md:block md:h-[120%] lg:mr-[70px]"
                 src="/cta.svg"
                 width={359}
                 height={394}
