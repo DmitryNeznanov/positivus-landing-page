@@ -79,4 +79,38 @@
   .span-background {
     @apply w-max h-max bg-background rounded-sm px-[7px] inline-flex items-center;
   }
+  .arrow {
+    position: relative;
+    background: #191a23;
+    border: 1px solid #b9ff66;
+    &:after,
+    &:before {
+      top: 100%;
+      left: 17%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(25, 26, 35, 0);
+      border-top-color: #191a23;
+      border-width: 30px;
+      margin-left: -30px;
+    }
+    &:before {
+      border-color: rgba(185, 255, 102, 0);
+      border-top-color: #b9ff66;
+      border-width: 31px;
+      margin-left: -31px;
+    }
+  }
+}
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

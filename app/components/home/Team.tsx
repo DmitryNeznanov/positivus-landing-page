@@ -108,6 +108,13 @@ export default function Team() {
             })}
           </div>
         </section>
+        <div className="mt-[40px]">
+          <Link
+            className="button-foreground"
+            href="/">
+            See all team
+          </Link>
+        </div>
       </div>
     </section>
   )
