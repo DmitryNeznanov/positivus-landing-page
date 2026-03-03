@@ -108,7 +108,7 @@ export default function Team() {
             })}
           </div>
         </section>
-        <div className="mt-[40px]">
+        <div className="w-max ml-auto mt-[40px]">
           <Link
             className="button-foreground"
             href="/">

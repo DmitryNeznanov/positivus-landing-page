@@ -38,7 +38,7 @@ export default function Cases() {
                     <h3 className="sr-only">{title}</h3>
                     <p className="text-background">{text}</p>
                     <Link
-                      className="mt-[20px] flex flex-row gap-[15px] text-accent text-xl md:text-2xl"
+                      className="link w-max mt-[20px] flex flex-row gap-[15px] text-accent text-xl md:text-2xl"
                       href="#contact">
                       Learn more
                       <svg

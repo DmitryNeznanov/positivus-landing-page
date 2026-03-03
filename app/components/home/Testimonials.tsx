@@ -1,6 +1,5 @@
 "use client"
 
-import { log } from "node:console"
 import { useRef, useState } from "react"
 
 export default function Testimonials() {
@@ -70,13 +69,12 @@ export default function Testimonials() {
     setIndex(index)
   }
   function handleScroll() {
-    const container = containerRef.current
-    if (!container) return
+    const container = containerRef.current!
 
     const slideWidth = container.offsetWidth
-    const newIndex = Math.round(container.scrollLeft / slideWidth)
+    const index = Math.round(container.scrollLeft / slideWidth)
 
-    setIndex(newIndex)
+    setIndex(index)
   }
 
   return (

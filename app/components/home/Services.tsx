@@ -45,7 +45,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                    <span className="text-xl md:text-2xl leading-md">
+                    <span className="link text-xl md:text-2xl leading-md">
                       Learn more
                     </span>
                   </Link>
@@ -84,7 +84,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                    <span className="text-xl md:text-2xl leading-md">
+                    <span className="link text-xl md:text-2xl leading-md">
                       Learn more
                     </span>
                   </Link>
@@ -123,7 +123,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                    <span className="text-xl md:text-2xl leading-md text-background">
+                    <span className="link text-xl md:text-2xl leading-md text-background">
                       Learn more
                     </span>
                   </Link>
@@ -162,7 +162,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                    <span className="text-xl md:text-2xl leading-md">
+                    <span className="link text-xl md:text-2xl leading-md">
                       Learn more
                     </span>
                   </Link>
@@ -201,7 +201,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                    <span className="text-xl md:text-2xl leading-md">
+                    <span className="link text-xl md:text-2xl leading-md">
                       Learn more
                     </span>
                   </Link>
@@ -240,7 +240,7 @@ export default function Services() {
                         />
                       </svg>
                     </span>
-                    <span className="text-xl md:text-2xl leading-md text-background">
+                    <span className="link text-xl md:text-2xl leading-md text-background">
                       Learn more
                     </span>
                   </Link>
@@ -265,8 +265,9 @@ export default function Services() {
             <div className="max-w-[373px] lg:max-w-[473px] flex flex-col gap-[26px]">
               <h3 className="heading-2xl">Let’s make things happen</h3>
               <p>
-                Contact us today to learn more about how our digital marketing
-                services can help your business grow and succeed online.
+                Contact us todaylink to learn more about how our digital
+                marketing services can help your business grow and succeed
+                online.
               </p>
               <Link
                 className="button-foreground"

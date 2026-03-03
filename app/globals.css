@@ -60,24 +60,10 @@
 
   /* Buttons */
   .button-foreground {
-    @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md;
+    @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md border hover:border-accent hover:text-accent;
   }
   .button-transparent {
-    @apply w-max block px-[35px] py-[20px] bg-transparent border border-foreground text-foreground text-xl xl:text-2xl leading-md rounded-md;
-  }
-
-  /* Utility */
-  .wrapper {
-    @apply max-w-[1240px] mx-auto;
-  }
-  .header-wrapper {
-    @apply pt-[35px] xl:pt-[60px] px-[10px];
-  }
-  .span-accent {
-    @apply w-max h-max bg-accent rounded-sm px-[7px] py-[4px] inline-flex items-center whitespace-nowrap;
-  }
-  .span-background {
-    @apply w-max h-max bg-background rounded-sm px-[7px] inline-flex items-center;
+    @apply w-max block px-[35px] py-[20px] bg-transparent border border-foreground text-foreground text-xl xl:text-2xl leading-md rounded-md hover:border-accent hover:text-accent;
   }
   .arrow {
     position: relative;
@@ -86,7 +72,7 @@
     &:after,
     &:before {
       top: 100%;
-      left: 17%;
+      left: 12%;
       border: solid transparent;
       content: "";
       height: 0;
@@ -109,8 +95,24 @@
     }
   }
 }
+
+/* Utility */
+
 @utility scrollbar-hidden {
   &::-webkit-scrollbar {
     display: none;
   }
+}
+@utility span-* {
+  background-color: --value(--color-*);
+  @apply w-max h-max  rounded-sm px-[7px] py-[4px] inline-flex items-center max-[425px]:break-all;
+}
+@utility wrapper {
+  @apply max-w-[1240px] mx-auto;
+}
+@utility header-wrapper {
+  @apply pt-[35px] xl:pt-[60px] px-[10px];
+}
+@utility link {
+  @apply hover:underline underline-offset-3 decoration-inherit decoration-2;
 }

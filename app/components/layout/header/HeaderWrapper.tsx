@@ -38,7 +38,7 @@ export default function HeaderWrapper({
                 ].map(([title, link], i) => {
                   return (
                     <li
-                      className="text-xl xl:text-2xl capitalize"
+                      className="link text-xl xl:text-2xl capitalize"
                       key={i}>
                       <Link href={`#${link}`}>{title}</Link>
                     </li>

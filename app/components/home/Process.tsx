@@ -19,7 +19,9 @@ export default function Process() {
       <div className="wrapper">
         <article className="justify-center flex flex-col md:items-center md:justify-center md:flex-row lg:justify-normal gap-[20px] md:gap-[40px]">
           <span className="span-accent">
-            <h2 className="heading-3xl">Our Working Process </h2>
+            <h2 className="heading-3xl ">
+              Our Working <span>Process</span>
+            </h2>
           </span>
           <p className="max-w-[293px]">
             Step-by-Step Guide to Achieving Your Business Goals
@@ -62,11 +64,13 @@ export default function Process() {
                   }}>
                   <div className="flex flex-col">
                     <div className="flex items-row items-center justify-between">
-                      <h3 className="heading-2xl flex flex-row items-center gap-[25px]">
+                      <h3 className="text-[18px] heading-2xl flex flex-row items-center gap-[25px]">
                         <span className="heading-4xl">
                           {(1 + i).toString().padStart(2, "0")}
                         </span>
-                        {title}
+                        <span className="heading-2xl break-all md:break-normal">
+                          {title}
+                        </span>
                       </h3>
                       <button
                         className={`w-[58px] h-[58px] flex justify-center shrink-0 rounded-full border border-foreground  cursor-pointer ${index === i + 1 ? "bg-grey" : "bg-transparent"}`}>
