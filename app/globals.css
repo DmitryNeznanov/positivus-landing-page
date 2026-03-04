@@ -60,10 +60,10 @@
 
   /* Buttons */
   .button-foreground {
-    @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md border hover:border-accent hover:text-accent;
+    @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md border cursor-pointer hover:border-accent hover:text-accent;
   }
   .button-transparent {
-    @apply w-max block px-[35px] py-[20px] bg-transparent border border-foreground text-foreground text-xl xl:text-2xl leading-md rounded-md hover:border-accent hover:text-accent;
+    @apply w-max block px-[35px] py-[20px] bg-transparent border border-foreground text-foreground text-xl xl:text-2xl leading-md rounded-md cursor-pointer hover:border-accent hover:text-accent;
   }
   .arrow {
     position: relative;
@@ -94,6 +94,12 @@
       margin-left: -31px;
     }
   }
+}
+
+/* Inputs */
+
+.input-primary {
+  @apply px-[30px] py-[18px] text-xl bg-background border border-foreground rounded-md;
 }
 
 /* Utility */
