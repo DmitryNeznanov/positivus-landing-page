@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colors */
+  --color-foreground: #191a23;
+  --color-background: #ffffff;
+  --color-grey: #f3f3f3;
+  --color-accent: #b9ff66;
+
+  /* Fonts */
+  --font-space-grotesk: var(--font-space-grotesk);
+
+  /* Text Sizes */
+  --text-md: 16px;
+  --text-xl: 18px;
+  --text-2xl: 20px;
+  --text-3xl: 26px;
+  --text-4xl: 30px;
+  --text-5xl: 36px;
+  --text-6xl: 40px;
+  --text-7xl: 43px;
+  --text-8xl: 60px;
+
+  /* Leading */
+  --leading-md: 28px;
+
+  /* Border Radius */
+  --radius-sm: 7px;
+  --radius-md: 14px;
+  --radius-lg: 45px;
+
+  /* Shadows */
+  --shadow-xl: 0px 5px 0px 0px #191a23;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+  body {
+    @apply text-base bg-background text-foreground font-space-grotesk;
+  }
 }
+@layer components {
+  /* Headings */
+  .heading-xl {
+    @apply text-xl font-medium xl:text-2xl;
+  }
+  .heading-2xl {
+    @apply text-3xl font-medium xl:text-4xl;
+  }
+  .heading-3xl {
+    @apply text-5xl font-medium xl:text-6xl;
+  }
+  .heading-4xl {
+    @apply text-7xl font-medium xl:text-8xl;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Text sizes */
+  .text-base {
+    @apply text-md md:text-xl;
+  }
+
+  /* Buttons */
+  .button-foreground {
+    @apply w-max block px-[35px] py-[20px] bg-foreground text-background text-xl xl:text-2xl leading-md rounded-md border cursor-pointer hover:border-accent hover:text-accent;
+  }
+  .button-accent {
+    @apply block px-[35px] py-[20px] bg-accent text-foreground text-xl xl:text-2xl leading-md rounded-md border cursor-pointer hover:border-foreground hover:text-foreground;
+  }
+  .button-transparent {
+    @apply w-max block px-[35px] py-[20px] bg-transparent border border-foreground text-foreground text-xl xl:text-2xl leading-md rounded-md cursor-pointer hover:border-accent hover:text-accent;
+  }
+  .arrow {
+    position: relative;
+    background: #191a23;
+    border: 1px solid #b9ff66;
+    &:after,
+    &:before {
+      top: 100%;
+      left: 12%;
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(25, 26, 35, 0);
+      border-top-color: #191a23;
+      border-width: 30px;
+      margin-left: -30px;
+    }
+    &:before {
+      border-color: rgba(185, 255, 102, 0);
+      border-top-color: #b9ff66;
+      border-width: 31px;
+      margin-left: -31px;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Inputs */
+
+.input-background {
+  @apply px-[30px] py-[18px] text-xl border text-foreground border-foreground rounded-md;
+}
+.input-foreground {
+  @apply px-[30px] py-[18px] text-xl border text-background border-background rounded-md;
+}
+
+/* Utility */
+
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@utility span-* {
+  background-color: --value(--color-*);
+  @apply w-max h-max  rounded-sm px-[7px] py-[4px] inline-flex items-center max-[425px]:break-all;
+}
+@utility wrapper {
+  @apply max-w-[1240px] mx-auto;
+}
+@utility header-wrapper {
+  @apply pt-[35px] xl:pt-[60px] px-[10px];
+}
+@utility link {
+  @apply hover:underline underline-offset-3 decoration-inherit decoration-2;
 }
