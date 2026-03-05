@@ -38,7 +38,7 @@ export default function Contact() {
               <label className="flex flex-col gap-y-[5px]">
                 <span className="w-max cursor-pointer">Name</span>
                 <input
-                  className="input-primary w-full"
+                  className="input-background w-full"
                   placeholder="Name"
                   type="text"
                 />
@@ -46,7 +46,7 @@ export default function Contact() {
               <label className="flex flex-col gap-y-[5px]">
                 <span className="w-max cursor-pointer">Email*</span>
                 <input
-                  className="input-primary w-full"
+                  className="input-background w-full"
                   placeholder="Email"
                   type="text"
                 />
@@ -54,7 +54,7 @@ export default function Contact() {
               <label className="flex flex-col gap-y-[5px]">
                 <span className="w-max cursor-pointer">Message*</span>
                 <textarea
-                  className="input-primary resize-none"
+                  className="input-background resize-none"
                   rows={6}
                   placeholder="Message"></textarea>
               </label>
